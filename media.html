@@ -6,16 +6,32 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        Welcome Back!
-    </h1>
-    <h2>
-        Here's a great video from Youtube!
-    </h2>
-    <video src=""></video>
-    <audio src=""></audio>
-
-    <p>Want to stay informed? Put your info here!</p>
-    Email:<input type="text"><input type="submit" value="Join Our Mailing List!">
+    <header>
+		<h1>
+			Welcome Back!
+		</h1>
+    </header>
+	<article>
+		<h2>
+			Here's a great video from Youtube!
+		</h2>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/whptJMsHQVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+	</article>
+	<article>
+		<h3>Here's some music!</h3>
+    <audio controls>
+    <source src="https://music.youtube.com/watch?v=uG4IGwvdtIk&feature=share" type="audio/ogg">
+    <source src="https://music.youtube.com/watch?v=uG4IGwvdtIk&feature=share"> Your browser does not support the audio element.
+    </audio>
+  </article>    
+	<footer>
+		<p>Want to stay informed? Put your info here!</p>
+		<form method="POST" action="#">
+		<label for="email">Email:</label>
+		<input type="email" name="email">
+		<input type="submit" value="Join Our Mailing List!">
+		</form>
+	</footer>
 </body>
 </html>
